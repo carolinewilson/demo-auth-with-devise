@@ -1,24 +1,13 @@
-# README
+# Auth with Devise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Practice app for setting up authentication using devise. 
 
-Things you may want to cover:
+###Notes
+Modified ```def new``` & ```def create``` in Posts controller to use ```current_user.posts.build``` in place of ```Post.new```. 
 
-* Ruby version
+Includes ```authentication_before_action``` for posts, with exceptions for ```index``` and ```show```.
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails 5.0.1
+* Devise 4.2
+* sqlite3
